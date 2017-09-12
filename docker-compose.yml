@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+
+  mysql:
+    image: mariadb
+    volumes:
+        - "./.data/db:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: brainbow
+
+  wordpress:
+    image: wordpress
+    volumes:
+      - "./theme/:/var/www/html/wp-content/themes/brainbow/"
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: brainbow
