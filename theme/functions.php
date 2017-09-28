@@ -16,4 +16,10 @@ function brainbow_enqueue_styles()
     wp_enqueue_style('mirador', get_stylesheet_directory_uri() . '/mirador/css/mirador-combined.css');
 }
 
+function brainbow_enqueue_scripts()
+{
+    wp_enqueue_script('brainbow-js', get_stylesheet_directory_uri() . '/brainbow.js');
+}
+
 add_action('wp_enqueue_scripts', 'brainbow_enqueue_styles');
+add_action('wp_enqueue_scripts', 'brainbow_enqueue_scripts');
