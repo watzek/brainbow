@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Launch a dev server at http://localhost:3000/
+
+trap stop_server SIGINT SIGTERM
+
+function stop_server {
+    printf "\nShutting down gracefully...\n"
+    docker-compose stop
+    exit 0
+}
+
+docker-compose up -d
+sleep 5
+gulp
