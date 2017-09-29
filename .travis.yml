@@ -3,3 +3,5 @@ nodejs:
   - 8
 services:
   - docker
+before_script:
+  - npm install -g casperjs phantomjs
