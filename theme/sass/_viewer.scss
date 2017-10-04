@@ -1,0 +1,39 @@
+
+.overlay {
+  color: $gray-base;
+}
+
+.mirador-viewer .manifest-info {
+  background: $gray-darker;
+}
+
+.manifest-info i {
+  color: $gray-light;
+}
+
+.manifest-info i:hover {
+  color: $gray-lighter;
+}
+
+.mirador-wrapper {
+  width: auto;
+  height: 55rem;
+  position: relative;
+  margin-top: -5rem;
+}
+
+#controls {
+  text-align: center;
+}
+
+#controls > button {
+  display: inline-block;
+}
+
+.mirador-btn.mirador-icon-view-type {
+  display: none;
+}
+
+.mirador-btn.mirador-icon-window-menu {
+  display: none;
+}

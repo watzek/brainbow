@@ -16,7 +16,7 @@ gulp.task('serve', ['sass', 'js'], () => {
 })
 
 gulp.task('sass', () => {
-  return gulp.src('theme/sass/**/*.scss')
+  return gulp.src('theme/sass/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('theme'))
     .pipe(browserSync.stream())
