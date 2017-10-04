@@ -1,0 +1,15 @@
+.site {
+  background-color: $gray-darker;
+  color: $gray-lighter;
+
+  .content-area {
+    width: 100%;
+  }
+
+  a {
+    color: $gray-light;
+    &:hover {
+      color: $gray-lighter;
+    }
+  }
+}

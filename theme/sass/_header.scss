@@ -1,0 +1,18 @@
+.brainbow-title,
+.main-navigation a {
+  color: $gray-lighter;
+  text-shadow: 0.25rem 0.25rem 0.5rem $gray-base;
+}
+
+.brainbow-title {
+  text-align: center;
+  font-size: 4rem;
+}
+
+#masthead {
+  text-align: center;
+}
+
+.site-header-main {
+  display: inline-block;
+}
