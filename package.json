@@ -2,7 +2,7 @@
   "name": "brainbow",
   "private": true,
   "scripts": {
-    "test": "./bin/test",
+    "test": "ava",
     "start": "./bin/run"
   },
   "repository": {
@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/watzek/brainbow#readme",
   "devDependencies": {
+    "ava": "^0.22.0",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
@@ -22,5 +23,9 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-uglifycss": "^1.0.8"
+  },
+  "ava": {
+    "files": ["test/**/*.js"],
+    "source": ["theme/**/*.js"]
   }
 }

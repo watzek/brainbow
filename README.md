@@ -18,10 +18,6 @@ git clone https://github.com/watzek/brainbow.git
 cd brainbow
 npm install
 ```
-[PhantomJS](http://phantomjs.org/), [CasperJS](http://casperjs.org/) & [Gulp](https://gulpjs.com/) are used for builds & tests. You can install them with:
-```sh
-npm install -g phantomjs casperjs gulp
-```
 
 ### Developing
 
@@ -36,12 +32,14 @@ You can make changes to the files in the `theme/` folder and your changes should
 
 ## Running the tests
 
-End-to-end testing uses the tests in the `test/` directory. You can run the full suite of tests with:
+Unit testing uses [ava](https://github.com/avajs/ava) to run the tests in the `test/` directory. You can run the full suite of tests with:
 ```
 npm test
 ```
-
-Wait a few moments for the docker container to start and then tests will run on port 8080.
+You can have ava watch the javascript files and re-run tests as you work with:
+```
+npm test -- --watch
+``` 
 
 ## Deployment
 
