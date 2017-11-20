@@ -30,6 +30,8 @@ Wait a few moments and your browser should open a tab to `http://localhost:3000`
 
 You can make changes to the files in the `theme/` folder and your changes should appear automatically. Sass files in `theme/sass/` and javascript in `theme/js/` will be compiled and minified as you work.
 
+Place vendor javascript in the `theme/js/vendor` directory and it will be compiled into a separately loaded `vendor.js` file in the theme folder.
+
 ## Running the tests
 
 Unit testing uses [ava](https://github.com/avajs/ava) to run the tests in the `test/` directory. You can run the full suite of tests with:
