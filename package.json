@@ -26,6 +26,6 @@
   },
   "ava": {
     "files": ["test/**/*.js"],
-    "source": ["theme/**/*.js"]
+    "source": ["theme/js/*.js"]
   }
 }
