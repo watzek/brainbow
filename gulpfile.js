@@ -6,13 +6,12 @@ const uglify      = require('gulp-uglify')
 const uglifyCss   = require('gulp-uglifycss')
 const browserSync = require('browser-sync').create()
 
-gulp.task('serve', ['sass', 'js', 'vendor'], () => {
+gulp.task('serve', ['sass', 'js'], () => {
   browserSync.init({
     proxy: "localhost:8080"
   })
   gulp.watch('theme/sass/**/*.scss', ['sass'])
   gulp.watch('theme/js/*.js', ['js'])
-  gulp.watch('theme/js/vendor/*.js', ['vendor'])
   gulp.watch('theme/**/*.php').on('change', browserSync.reload)
 })
 
@@ -24,13 +23,6 @@ gulp.task('sass', () => {
     .pipe(uglifyCss())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('theme'))
-})
-
-gulp.task('vendor', () => {
-  return gulp.src('theme/js/vendor/*.js')
-    .pipe(concat('vendor.js'))
-    .pipe(gulp.dest('theme'))
-    .pipe(browserSync.stream())
 })
 
 gulp.task('js', () => {
