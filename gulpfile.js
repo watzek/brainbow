@@ -10,29 +10,29 @@ gulp.task('serve', ['sass', 'js'], () => {
   browserSync.init({
     proxy: "localhost:8080"
   })
-  gulp.watch('theme/sass/**/*.scss', ['sass'])
-  gulp.watch('theme/js/*.js', ['js'])
-  gulp.watch('theme/**/*.php').on('change', browserSync.reload)
+  gulp.watch('brainbow/sass/**/*.scss', ['sass'])
+  gulp.watch('brainbow/js/*.js', ['js'])
+  gulp.watch('brainbow/**/*.php').on('change', browserSync.reload)
 })
 
 gulp.task('sass', () => {
-  return gulp.src('theme/sass/style.scss')
+  return gulp.src('brainbow/sass/style.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('theme'))
+    .pipe(gulp.dest('brainbow'))
     .pipe(browserSync.stream())
     .pipe(uglifyCss())
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('theme'))
+    .pipe(gulp.dest('brainbow'))
 })
 
 gulp.task('js', () => {
-  return gulp.src('theme/js/*.js')
+  return gulp.src('brainbow/js/*.js')
     .pipe(concat('brainbow.js'))
-    .pipe(gulp.dest('theme'))
+    .pipe(gulp.dest('brainbow'))
     .pipe(browserSync.stream())
     .pipe(rename('brainbow.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('theme'))
+    .pipe(gulp.dest('brainbow'))
 })
 
 gulp.task('default', ['serve'])

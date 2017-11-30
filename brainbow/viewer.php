@@ -1,7 +1,7 @@
 <?php
 /*
  * Template Name: Viewer
- * The template for displaying a mirador viewer
+ * The template for displaying an image viewer
  *
  *
  */
@@ -19,11 +19,11 @@ $image_title = $post->post_name;
      data-manifestindex="0"
      data-sequenceindex="0"
      data-canvasindex="0"
-     data-zoom="-1.0064,0,3.0128,1.3791"
+     data-zoom="0"
      data-rotation="0"
      style="height:777px; background-color: #000">
  </div>
-<script type="text/javascript" id="embedUV" src="https://universalviewer.io/uv/lib/embed.js"></script>
+<script type="text/javascript" id="embedUV" src="https://universalviewer.io/vendor/uv/lib/embed.js"></script>
 <script type="text/javascript">/* wordpress fix */</script>
 
 <?php get_footer(); ?>

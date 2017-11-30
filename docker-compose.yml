@@ -12,8 +12,16 @@ services:
   wordpress:
     image: wordpress
     volumes:
-      - "./theme/:/var/www/html/wp-content/themes/brainbow/"
+      - "./brainbow/:/var/www/html/wp-content/themes/brainbow/"
     ports:
       - 8080:80
     environment:
       WORDPRESS_DB_PASSWORD: brainbow
+
+  manifests:
+    image: httpd
+    volumes:
+        - "./iiif/:/usr/local/apache2/htdocs/"
+        - "./httpd.conf/:/usr/local/apache2/conf/httpd.conf"
+    ports:
+        - 8081:80

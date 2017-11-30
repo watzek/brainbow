@@ -1,0 +1,93 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "http://6298335a-40f7-463d-9ecd-104a345ad879",
+  "@type": "sc:Manifest",
+  "label": "Brainbow hippocampus",
+  "metadata": [{
+      "label": "Type of microscope",
+      "value": "Olympus FV1000"
+    },
+    {
+      "label": "Author/Imager",
+      "value": "Weissman"
+    },
+    {
+      "label": "Magnification/Objective",
+      "value": "40x, 1.30NA"
+    },
+    {
+      "label": "Cause of color",
+      "value": "brainbow"
+    }
+  ],
+  "attribution": "Lewis & Clark College",
+  "sequences": [{
+    "@id": "http://91dcbc76-6135-4e7a-9d11-79248631ec6d",
+    "@type": "sc:Sequence",
+    "label": [{
+      "@value": "Normal Sequence",
+      "@language": "en"
+    }],
+    "canvases": [{
+      "@id": "http://9e250190-e7a5-4a7b-abd6-36403c82b5d9",
+      "@type": "sc:Canvas",
+      "label": "Brainbow hippocampus",
+      "height": 2838,
+      "width": 4200,
+      "images": [{
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@id": "http://f6e33a9e-da14-4a14-b6a2-9bda281a46fa",
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "resource": {
+          "@id": "https://images.watzek.cloud/brainbow/hippocampus.tif/full/full/0/default.jpg",
+          "@type": "dctypes:Image",
+          "format": "image/jpeg",
+          "service": {
+            "@context": "http://iiif.io/api/image/2/context.json",
+            "@id": "https://images.watzek.cloud/brainbow/hippocampus.tif",
+            "profile": [
+              "http://iiif.io/api/image/2/level2.json",
+              {
+                "supports": [
+                  "canonicalLinkHeader",
+                  "profileLinkHeader",
+                  "mirroring",
+                  "rotationArbitrary",
+                  "regionSquare",
+                  "sizeAboveFull"
+                ],
+                "qualities": [
+                  "default",
+                  "color",
+                  "gray",
+                  "bitonal"
+                ],
+                "formats": [
+                  "jpg",
+                  "png",
+                  "gif",
+                  "webp"
+                ]
+              }
+            ]
+          },
+          "height": 2838,
+          "width": 4200
+        },
+        "on": "http://9e250190-e7a5-4a7b-abd6-36403c82b5d9"
+      }]
+    }]
+  }],
+  "thumbnail": {
+    "@id": "https://images.watzek.cloud/brainbow/hippocampus.tif/square/200,200/0/default.jpg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "http://example.org/images/book1-page1",
+      "profile": "http://iiif.io/api/image/2/level1.json"
+    }
+  },
+  "structures": [],
+  "license": "https://brainbow.watzek.cloud/request",
+  "description": "This image shows a magnified view of a hippocampal region known as the dentate gyrus. The hippocampus is thought to be important for memory. It is also believed that some new adult neurons are born along the inner fold of the dentate gyrus. (Several XY fields were montaged together.)"
+}
