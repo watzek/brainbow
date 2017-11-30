@@ -1,0 +1,93 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "http://6298335a-40f7-463d-9ecd-104a345ad879",
+  "@type": "sc:Manifest",
+  "label": "Brainbow dentate gyrus, hippocampus",
+  "metadata": [{
+      "label": "Type of microscope",
+      "value": "Olympus FV1000"
+    },
+    {
+      "label": "Author/Imager",
+      "value": "Weissman"
+    },
+    {
+      "label": "Cause of color",
+      "value": "brainbow"
+    },
+    {
+      "label": "Magnification/Objective",
+      "value": "60x, 1.45NA"
+    }
+  ],
+  "attribution": "Lewis & Clark College",
+  "sequences": [{
+    "@id": "http://91dcbc76-6135-4e7a-9d11-79248631ec6d",
+    "@type": "sc:Sequence",
+    "label": [{
+      "@value": "Normal Sequence",
+      "@language": "en"
+    }],
+    "canvases": [{
+      "@id": "http://9e250190-e7a5-4a7b-abd6-36403c82b5d9",
+      "@type": "sc:Canvas",
+      "label": "Brainbow dentate gyrus, hippocampus",
+      "height": 3686,
+      "width": 3000,
+      "images": [{
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@id": "http://b70e49ed-224f-40b0-948f-982b289bb14c",
+        "@type": "oa:Annotation",
+        "motivation": "sc:painting",
+        "resource": {
+          "@id": "https://images.watzek.cloud/brainbow/gyrus.tif/full/full/0/default.jpg",
+          "@type": "dctypes:Image",
+          "format": "image/jpeg",
+          "service": {
+            "@context": "http://iiif.io/api/image/2/context.json",
+            "@id": "https://images.watzek.cloud/brainbow/gyrus.tif",
+            "profile": [
+              "http://iiif.io/api/image/2/level2.json",
+              {
+                "supports": [
+                  "canonicalLinkHeader",
+                  "profileLinkHeader",
+                  "mirroring",
+                  "rotationArbitrary",
+                  "regionSquare",
+                  "sizeAboveFull"
+                ],
+                "qualities": [
+                  "default",
+                  "color",
+                  "gray",
+                  "bitonal"
+                ],
+                "formats": [
+                  "jpg",
+                  "png",
+                  "gif",
+                  "webp"
+                ]
+              }
+            ]
+          },
+          "height": 3686,
+          "width": 3000
+        },
+        "on": "http://9e250190-e7a5-4a7b-abd6-36403c82b5d9"
+      }]
+    }]
+  }],
+  "thumbnail": {
+    "@id": "https://images.watzek.cloud/brainbow/gyrus.tif/square/200,200/0/default.jpg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "http://example.org/images/book1-page1",
+      "profile": "http://iiif.io/api/image/2/level1.json"
+    }
+  },
+  "structures": [],
+  "license": "https://brainbow.watzek.cloud/request",
+  "description": "This image shows a highly magnified view of a hippocampal region known as the dentate gyrus. The hippocampus is thought to be important for memory. It is also believed that some new adult neurons are born in the dentate gyrus."
+}
