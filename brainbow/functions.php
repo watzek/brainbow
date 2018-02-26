@@ -67,7 +67,7 @@ function create_viewer($atts)
         (!empty($a['zoom']) ? "data-zoom={$a['zoom']} " : "") .
         (!empty($a['xywh']) ? "data-xywh={$a['xywh']} " : "") .
      "></div>
-     <script type='text/javascript' id='embedUV' src='https://universalviewer.io/vendor/uv/lib/embed.js'></script>
+     <script type='text/javascript' id='embedUV' src='http://universalviewer.io/vendor/uv/lib/embed.js'></script>
      <script type='text/javascript'>/* wordpress fix */</script>";
 }
 
