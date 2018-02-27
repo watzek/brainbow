@@ -32,12 +32,12 @@
         "@type": "oa:Annotation",
         "motivation": "sc:painting",
         "resource": {
-          "@id": "https://images.watzek.cloud/brainbow/rosettes.tif/full/full/0/default.jpg",
+          "@id": "http://vogel-prod.krd9qinped.us-west-2.elasticbeanstalk.com/rosettes.tif/full/full/0/default.jpg",
           "@type": "dctypes:Image",
           "format": "image/jpeg",
           "service": {
             "@context": "http://iiif.io/api/image/2/context.json",
-            "@id": "https://images.watzek.cloud/brainbow/rosettes.tif",
+            "@id": "http://vogel-prod.krd9qinped.us-west-2.elasticbeanstalk.com/rosettes.tif",
             "profile": [
               "http://iiif.io/api/image/2/level2.json",
               {
@@ -71,7 +71,7 @@
     }]
   }],
   "thumbnail": {
-    "@id": "https://images.watzek.cloud/brainbow/rosettes.tif/square/200,200/0/default.jpg",
+    "@id": "http://vogel-prod.krd9qinped.us-west-2.elasticbeanstalk.com/rosettes.tif/square/200,200/0/default.jpg",
     "service": {
       "@context": "http://iiif.io/api/image/2/context.json",
       "@id": "http://example.org/images/book1-page1",
