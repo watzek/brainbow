@@ -37,7 +37,6 @@ function create_viewer($atts)
         'fullscreen' => false,
         'jsonp' => null,
         'lightbox' => false,
-        'locale' => 'en-US:English',
         'no_load' => false,
         'uri' => '',
         'style' => '',
@@ -55,7 +54,6 @@ function create_viewer($atts)
         (!empty($a['fullscreen']) ? "data-fullscreen": "") .
         (!empty($a['jsonp']) ? "data-jsonp " : "") .
         (!empty($a['lightbox']) ? "data-lightbox " : "") .
-        (!empty($a['locale']) ? "data-locale={$a['locale']} " : "") .
         (!empty($a['no_load']) ? "data-no-load " : "") .
         (!empty($a['uri']) ? "data-uri={$a['uri']} " : "") .
         (!empty($a['style']) ? "style={$a['style']} " : "") .
