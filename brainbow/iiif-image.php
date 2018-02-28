@@ -1,7 +1,9 @@
 <?php
 /**
- * The template for displaying pages.
- * Removes the sidebar and comments from the twentysixteen version.
+ * Template Name: IIIF Image
+ * Template Post Type: page
+ * 
+ * The template for displaying a single IIIF image in a viewer.
  *
  * @package WordPress
  * @subpackage Brainbow
@@ -15,7 +17,7 @@ get_header(); ?>
 
 		<?php
         while (have_posts()) : the_post();
-            get_template_part('template-parts/content', 'page');
+            get_template_part('template-parts/content', 'viewer');
         endwhile;
         ?>
 
