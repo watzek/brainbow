@@ -25,9 +25,11 @@ Open your favorite web browser. Then, run a development server with:
 yarn run # or npm start
 ```
 
-Wait a few moments and your browser should open a tab to <http://localhost:3000>. If you've just cloned the repository, you'll need to navigate to <http://localhost:3000/wp-setup> and set up wordpress. Then, you can log in at <http://localhost:3000/wp-admin>. 
+Wait a few moments and your browser should open a tab to <http://localhost:3000>. If you've just cloned the repository, you'll need to navigate to <http://localhost:3000/wp-setup> and set up wordpress. Then, you can log in at <http://localhost:3000/wp-admin>.
 
 You can make changes to the files in the `theme/` folder and your changes should appear automatically. Sass files in `theme/sass/` and javascript in `theme/js/` will be compiled and minified as you work.
+
+See [the wiki](https://github.com/watzek/brainbow/wiki) for more detailed information about how to control content on the site.
 
 ## Deployment
 
