@@ -20,10 +20,10 @@
         <img src="<?php echo $thumbnail; ?>" />
     </div>
     <figcaption class="gallery-title">
-        <?php echo $title; ?>
+        <?php echo get_the_title(); ?>
     </figcaption>
     <div class="gallery-controls">
-        <a href="<?php get_page_link(); ?>"><button>view</button></a>
+        <a href="<?php echo $post->guid; ?>"><button>view</button></a>
         <a class="request-link" href="/request?image=<?php echo $title; ?>"><button>request</button></a>
     </div>
 </figure>
