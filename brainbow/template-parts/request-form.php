@@ -19,17 +19,17 @@
     <form action="#" method="post">
         <?php the_content(); ?>
         <fieldset>
-            <legend>Basics</legend>
-            <label>Name:</label>
+            <legend>basics</legend>
+            <label>name:</label>
             <input type="text" required><br>
-            <label>Email:</label>
+            <label>email:</label>
             <input type="email" required><br>
         </fieldset>
         <fieldset>
-            <legend>Image</legend>
-            <label>Image name:</label>
+            <legend>image</legend>
+            <label>image name:</label>
             <input type="text" value="<?php echo $_GET['image']; ?>"/>
-            <label>Reason for request:</label>
+            <label>reason for request:</label>
             <textarea></textarea>
         </fieldset>
         <div style='text-align:center;'>
