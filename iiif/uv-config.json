@@ -1,0 +1,112 @@
+{
+    "options": {
+        "leftPanelEnabled": false,
+        "navigatorEnabled": false,
+        "rightPanelEnabled": true,
+        "searchWithinEnabled": false
+    },
+    "modules": {
+        "dialogue": {
+            "content": {
+                "close": "close"
+            }
+        },
+        "downloadDialogue": {
+            "options": {
+                "confinedImageSize": 1000,
+                "maxImageWidth": 9000,
+                "selectionEnabled": false
+            },
+            "content": {
+                "currentViewAsJpg": "Current view {0} x {1}px (jpg)",
+                "download": "Request",
+                "downloadSelection": "Download selection",
+                "downloadSelectionButton": "Download PDF",
+                "editSettings": "Edit settings",
+                "entireDocument": "Entire document ({0})",
+                "entireFileAsOriginal": "Entire file ({0})",
+                "noneAvailable": "No download options are available.",
+                "pagingNote": "Please turn off two-page view for more options.",
+                "preview": "Preview",
+                "title": "Request options",
+                "wholeImageHighRes": "Whole image {0} x {1}px ({2})",
+                "wholeImageLowResAsJpg": "Whole image {0} x {1}px (jpg)"
+            }
+        },
+        "footerPanel": {
+            "options": {
+                "bookmarkEnabled": false,
+                "downloadEnabled": true,
+                "shareEnabled": false,
+                "embedEnabled": false,
+                "feedbackEnabled": false,
+                "fullscreenEnabled": true,
+                "minimiseButtons": false,
+                "openEnabled": false
+            },
+            "content": {
+                "download": "Request this image"
+            }
+        },
+        "moreInfoRightPanel": {
+            "options": {
+                "panelAnimationDuration": 250,
+                "panelCollapsedWidth": 30,
+                "panelExpandedWidth": 255,
+                "panelOpen": true,
+                "textLimit": 4,
+                "textLimitType": "lines",
+                "displayOrder": "metadata, license, attribution"
+            },
+            "content": {
+                "attribution": "Attribution",
+                "collapse": "Collapse panel",
+                "collapseFull": "Collapse panel",
+                "description": "Description",
+                "expand": "Expand panel",
+                "expandFull": "Expand panel",
+                "holdingText": "Your module goes here!",
+                "less": "less",
+                "license": "License",
+                "logo": "Logo",
+                "more": "more",
+                "noData": "No data to display",
+                "title": "More information"
+            }
+        },
+        "seadragonCenterPanel": {
+            "options": {
+                "animationTime": 0.15,
+                "autoHideControls": true,
+                "blendTime": 0,
+                "constrainDuringPan": false,
+                "controlsFadeAfterInactive": 1500,
+                "controlsFadeDelay": 250,
+                "controlsFadeLength": 250,
+                "defaultZoomLevel": 0,
+                "immediateRender": false,
+                "maxZoomLevel": 8,
+                "navigatorPosition": "BOTTOM_RIGHT",
+                "pageGap": 0.01,
+                "showHomeControl": false,
+                "trimAttributionCount": 150,
+                "visibilityRatio": 0.5
+            },
+            "content": {
+                "acknowledgements": "Attribution",
+                "goHome": "Reset",
+                "imageUnavailable": "Image unavailable",
+                "next": "Next",
+                "previous": "Previous",
+                "rotateRight": "Rotate right",
+                "zoomIn": "Zoom in",
+                "zoomOut": "Zoom out"
+            }
+        },
+        "clickThroughDialogue": {
+            "content": {
+                "viewTerms": "Read full Terms and Conditions"
+            }
+        }
+    }
+}
