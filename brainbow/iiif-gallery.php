@@ -5,9 +5,6 @@
  *
  * The template for rendering a gallery of IIIF images.
  *
- * Relies on gathering the children of itself in the hierarchy to determine
- * which pages to render.
- *
  * @package WordPress
  * @subpackage Brainbow
  * @since Brainbow 1.0
