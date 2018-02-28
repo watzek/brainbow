@@ -20,9 +20,12 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
-input[type="submit"] {
+input[type="submit"],
+button {
   font-family: 'Roboto', sans-serif;
-  text-transform: none; }
+  font-weight: normal;
+  text-transform: none;
+  padding: .5rem 1rem; }
 
 .main-navigation li {
   font-size: 1.5rem; }
@@ -33,11 +36,13 @@ input[type="submit"] {
   display: inline-block;
   text-align: center;
   padding: 1rem; }
+  .gallery-listing a {
+    display: inline-block; }
+  .gallery-listing figcaption {
+    text-align: left;
+    margin-left: 2rem; }
 
-.gallery-listing a {
-  display: inline-block; }
-
-.gallery-preview {
+.gallery-listing .gallery-preview {
   width: 200px;
   height: 200px;
   background: url("ring.gif");
@@ -48,3 +53,13 @@ input[type="submit"] {
 
 .gallery-controls > button {
   display: inline-block; }
+
+.gallery-title {
+  font-size: 1.5rem; }
+
+.gallery-controls,
+.gallery-title {
+  padding-bottom: .5rem; }
+
+.gallery-info {
+  font-size: 1rem; }

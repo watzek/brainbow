@@ -10,9 +10,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-input[type="submit"] {
+input[type="submit"],
+button {
     font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     text-transform: none;
+    padding: .5rem 1rem;
 }
 
 .main-navigation li {

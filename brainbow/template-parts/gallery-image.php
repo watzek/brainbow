@@ -15,15 +15,20 @@
     $title = $manifest['label'];
 ?>
 
-<figure class="gallery-listing">
+<figure class="gallery-listing d-flex flex-row">
     <div class="gallery-preview">
         <img src="<?php echo $thumbnail; ?>" />
     </div>
-    <figcaption class="gallery-title">
-        <?php echo get_the_title(); ?>
+    <figcaption>
+        <div class="gallery-title">
+            <?php echo get_the_title(); ?>
+        </div>
+        <div class="gallery-controls">
+            <a href="<?php echo $post->guid; ?>"><button>view</button></a>
+            <a class="request-link" href="/request?image=<?php echo $title; ?>"><button>request</button></a>
+        </div>
+        <p class="gallery-info">
+            <?php echo $manifest['description']; ?>
+        </p>
     </figcaption>
-    <div class="gallery-controls">
-        <a href="<?php echo $post->guid; ?>"><button>view</button></a>
-        <a class="request-link" href="/request?image=<?php echo $title; ?>"><button>request</button></a>
-    </div>
 </figure>

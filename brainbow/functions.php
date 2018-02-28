@@ -13,6 +13,8 @@ function brainbow_enqueue_styles()
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
+    // bootstrap grid systen
+    wp_enqueue_style('bootstrap-grid', get_stylesheet_directory_uri() . '/lib/css/bootstrap-grid.min.css');
 }
 
 function brainbow_enqueue_scripts()

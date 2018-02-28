@@ -1,23 +1,41 @@
 .gallery-listing {
-  display: inline-block;
-  text-align: center;
-  padding: 1rem;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+
+    a {
+        display: inline-block;
+    }
+
+    figcaption {
+        text-align: left;
+        margin-left: 2rem;
+    }
 }
 
-.gallery-listing a {
-  display: inline-block;
+.gallery-listing .gallery-preview {
+    width: 200px;
+    height: 200px;
+    background: url("ring.gif");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.gallery-preview {
-  width: 200px;
-  height: 200px;
-  background: url('ring.gif');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.gallery-controls > button {
+    display: inline-block;
 }
 
-.gallery-controls>button {
-  display: inline-block;
+.gallery-title {
+    font-size: 1.5rem;
+}
+
+.gallery-controls,
+.gallery-title {
+    padding-bottom: .5rem;
+}
+
+.gallery-info {
+    font-size: 1rem;
 }
