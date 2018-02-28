@@ -72,35 +72,3 @@ function create_viewer($atts)
 add_shortcode('viewer', 'create_viewer');
 
 /**
- * Gallery shortcode
- */
-
-function create_gallery_thumbnail( $atts, $content = null ) {
-    // defaults
-    extract(shortcode_atts(array(
-        'uri' => '',
-        'page' => ''
-    ), $atts));
-
-    $manifest = json_decode(file_get_contents($uri), true);
-    $thumbnail = $manifest['thumbnail']['@id'];
-    $title = $manifest['label'];
-
-    // template
-    return "<div class='gallery-listing'>
-        <a href='{$page}'>
-            <div class='gallery-preview' id='{$manifest['label']}'>
-                <img src='{$manifest['thumbnail']['@id']}' />
-            </div>
-        </a>
-        <div class='gallery-title'>{$manifest['label']}</div>
-        <div class='gallery-controls'>
-            <a href='{$page}'><button>View</button></a>
-            <a class='request-link' href='/request?image={$title}'><button>Request</button></a>
-        </div>
-    </div>";
-}
-
-add_shortcode('gallery_thumb', 'create_gallery_thumbnail');
-
-/**
