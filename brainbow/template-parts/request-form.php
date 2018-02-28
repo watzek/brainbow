@@ -12,6 +12,9 @@
  */
 ?>
 
+<header class="entry-header">
+    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+</header>
 <section class="request-form">
     <form action="#" method="post">
         <?php the_content(); ?>
