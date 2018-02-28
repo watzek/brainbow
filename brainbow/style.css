@@ -24,6 +24,11 @@ input[type="submit"] {
   font-family: 'Roboto', sans-serif;
   text-transform: none; }
 
+.main-navigation li {
+  font-size: 1.5rem; }
+  .main-navigation li a {
+    padding-top: 0; }
+
 .gallery-listing {
   display: inline-block;
   text-align: center;
